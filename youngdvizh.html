@@ -1,0 +1,109 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maxximov</title>
+  </head>
+  <body>
+    <div class="container" style="overflow: hidden;">
+      <video
+        style="width: max-content; height: inherit"
+        autoplay
+        muted
+        loop
+        id="video-bg"
+        playsinline
+      >
+        <source src="./idle.mp4" type="video/mp4" />
+        Ваш браузер не поддерживает видео.
+      </video>
+      <div style="">
+        <img
+          style="width: 140px; height: 140px; /*  */"
+          src="./logo.png"
+          alt=""
+        />
+        <div class="knopka">
+          <a href="ссылув_на_былеты" target="_blank">Купить билет</a>
+        </div>
+        <div class="knopka">
+          <a href="https://instagram.com/youngdvizhspb" target="_blank">Instagram</a>
+        </div>
+        <div class="knopka">
+          <a href="https://vk.com/youngdvizhspb" target="_blank">VK</a>
+        </div>
+        <div class="knopka">
+          <a href="https://t.me/youngdvizhspb" target="_blank">Telegram</a>
+        </div>
+      </div>
+    </div>
+  </body>
+  <style>
+    @font-face {
+      font-family: "Intro";
+      src: local("Intro"), url(./intro.ttf) format("truetype");
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      width: 100vw;
+      font-family: Intro;
+    }
+    .video-container {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    #video-background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      z-index: -1;
+    }
+
+    .container > div > img {
+      height: 33%;
+    }
+    .container > div {
+      position: absolute;
+      width: 300px;
+      height: 300px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      flex-direction: column;
+      padding-top: 33px;
+      overflow: hidden;
+    }
+    .container {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .knopka {
+      height: 35px;
+      color: black;
+      background-color: #ffc400;
+      width: 200px;
+      margin: 6px;
+      border-radius: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    a{
+      text-decoration: none;
+      color: black;
+    }
+  </style>
+</html>
