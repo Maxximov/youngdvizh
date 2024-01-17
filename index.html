@@ -35,68 +35,7 @@
     </div>
   </body>
   <style>
-    @font-face {
-      font-family: "Intro";
-      src: local("Intro"), url(./intro.ttf) format("truetype");
-    }
- 
-    .video-container {
-      position: relative;
-      width: 100vw;
-      height: 100vh;
-      overflow: hidden;
-    }
-
-    #video-background {
-      position: absolute;
-      top: 0;
-      left: 0;
-      min-width: 100%;
-      min-height: 100%;
-      width: auto;
-      height: auto;
-      z-index: -1;
-    }
-
-    .container > div > img {
-      height: 33%;
-    }
-    .container > div {
-      position: absolute;
-      width: 300px;
-      height: 300px;
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      flex-direction: column;
-      padding-top: 33px;
-      overflow: hidden;
-    }
-    .container {
-      width: 100vw;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-    }
-    .knopka {
-      height: 35px;
-      color: black;
-      background-color: #ffc400;
-      width: 200px;
-      margin: 6px;
-      border-radius: 20px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    a{
-      text-decoration: none;
-      color: black;
-    }
-    /* Config */
-$color-bg: black;
+ $color-bg: #1e1e1e;
 $color-particle: #fff;
 $spacing: 2560px;
 $time-1: 60s;
@@ -121,7 +60,6 @@ $time-4: 200s;
 /* Styles */
 html, body {
   height: 100%;
-  font-family: Intro;
 }
 
 body {
