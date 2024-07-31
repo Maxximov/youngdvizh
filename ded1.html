@@ -64,6 +64,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      flex-direction: column;
     }
     button {
       text-decoration: none;
@@ -75,11 +76,8 @@
       font: inherit;
       cursor: pointer;
     }
-    #credits-container {
-      position: absolute;
-      top: 400px;
-      width: 100%;
-      text-align: center;
+    .text-container {
+      margin-top: 10px;
       color: yellow;
       font-size: 20px;
       font-family: 'Intro', sans-serif;
@@ -91,21 +89,18 @@
     <img src="./idle.gif" style="width: 100vw; height: 100vh;" alt="">
     <div style="">
       <img style="width: 140px; height: 140px;" src="./pngshechka.png" alt="" />
-      <div class="knopka"><button onclick="showText('text1')">I страница</button></div>
-      <div class="knopka"><button onclick="showText('text2')">II страница</button></div>
-      <div class="knopka"><button onclick="showText('text3')">III страница</button></div>
-      <div class="knopka"><button onclick="showText('text4')">IV страница</button></div>
-      <div class="knopka"><button onclick="showText('text5')">V страница</button></div>
-      <div class="knopka"><button onclick="showText('text6')">VI страница</button></div>
-      <div class="knopka"><button onclick="showText('text7')">VII страница</button></div>
+      <div class="knopka"><button onclick="showText('text1', this)">I страница</button><div id="text1" class="text-container"></div></div>
+      <div class="knopka"><button onclick="showText('text2', this)">II страница</button><div id="text2" class="text-container"></div></div>
+      <div class="knopka"><button onclick="showText('text3', this)">III страница</button><div id="text3" class="text-container"></div></div>
+      <div class="knopka"><button onclick="showText('text4', this)">IV страница</button><div id="text4" class="text-container"></div></div>
+      <div class="knopka"><button onclick="showText('text5', this)">V страница</button><div id="text5" class="text-container"></div></div>
+      <div class="knopka"><button onclick="showText('text6', this)">VI страница</button><div id="text6" class="text-container"></div></div>
+      <div class="knopka"><button onclick="showText('text7', this)">VII страница</button><div id="text7" class="text-container"></div></div>
     </div>
-  </div>
-  <div id="credits-container">
-    <div id="credits-text">Welcome to Maxximov!</div>
   </div>
 
   <script>
-    function showText(textId) {
+    function showText(textId, element) {
       const texts = {
         text1: 'Text for I страница. Welcome to the world of Star Wars!',
         text2: 'Text for II страница. The force is strong with this one.',
@@ -115,7 +110,8 @@
         text6: 'Text for VI страница. Embrace your destiny.',
         text7: 'Text for VII страница. The adventure continues.',
       };
-      document.getElementById('credits-text').innerText = texts[textId];
+      const textContainer = document.getElementById(textId);
+      textContainer.innerText = texts[textId];
     }
   </script>
 </body>
