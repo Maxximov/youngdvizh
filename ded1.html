@@ -38,7 +38,7 @@
     .container > div {
       position: absolute;
       width: 300px;
-      height: 300px;
+      height: auto;
       display: flex;
       justify-content: flex-end;
       align-items: center;
@@ -55,7 +55,7 @@
       flex-direction: column;
     }
     .knopka {
-      height: 35px;
+      height: auto;
       color: black;
       background-color: #ffc400;
       width: 200px;
@@ -81,6 +81,7 @@
       color: yellow;
       font-size: 20px;
       font-family: 'Intro', sans-serif;
+      text-align: center;
     }
   </style>
 </head>
@@ -89,13 +90,34 @@
     <img src="./idle.gif" style="width: 100vw; height: 100vh;" alt="">
     <div style="">
       <img style="width: 140px; height: 140px;" src="./pngshechka.png" alt="" />
-      <div class="knopka"><button onclick="showText('text1', this)">I страница</button><div id="text1" class="text-container"></div></div>
-      <div class="knopka"><button onclick="showText('text2', this)">II страница</button><div id="text2" class="text-container"></div></div>
-      <div class="knopka"><button onclick="showText('text3', this)">III страница</button><div id="text3" class="text-container"></div></div>
-      <div class="knopka"><button onclick="showText('text4', this)">IV страница</button><div id="text4" class="text-container"></div></div>
-      <div class="knopka"><button onclick="showText('text5', this)">V страница</button><div id="text5" class="text-container"></div></div>
-      <div class="knopka"><button onclick="showText('text6', this)">VI страница</button><div id="text6" class="text-container"></div></div>
-      <div class="knopka"><button onclick="showText('text7', this)">VII страница</button><div id="text7" class="text-container"></div></div>
+      <div class="knopka">
+        <button onclick="showText('text1', this)">I страница</button>
+        <div id="text1" class="text-container"></div>
+      </div>
+      <div class="knopka">
+        <button onclick="showText('text2', this)">II страница</button>
+        <div id="text2" class="text-container"></div>
+      </div>
+      <div class="knopka">
+        <button onclick="showText('text3', this)">III страница</button>
+        <div id="text3" class="text-container"></div>
+      </div>
+      <div class="knopka">
+        <button onclick="showText('text4', this)">IV страница</button>
+        <div id="text4" class="text-container"></div>
+      </div>
+      <div class="knopka">
+        <button onclick="showText('text5', this)">V страница</button>
+        <div id="text5" class="text-container"></div>
+      </div>
+      <div class="knopka">
+        <button onclick="showText('text6', this)">VI страница</button>
+        <div id="text6" class="text-container"></div>
+      </div>
+      <div class="knopka">
+        <button onclick="showText('text7', this)">VII страница</button>
+        <div id="text7" class="text-container"></div>
+      </div>
     </div>
   </div>
 
