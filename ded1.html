@@ -35,6 +35,7 @@
       align-items: center;
       flex-direction: column;
       padding: 10px;
+      position: relative;
     }
     button {
       text-decoration: none;
@@ -65,19 +66,17 @@
       transition: max-height 0.5s ease-in, opacity 0.5s ease-in;
     }
     .fixed-image {
-      position: fixed;
-      top: 0;
-      left: 0;
       width: 140px;
       height: 140px;
+      margin-bottom: 20px;
     }
   </style>
 </head>
 <body>
-  <div class="fixed-image">
-    <img src="./pngshechka.png" alt="Logo" />
-  </div>
   <div class="container">
+    <div class="fixed-image">
+      <img src="./pngshechka.png" alt="Logo" />
+    </div>
     <div class="knopka">
       <button onclick="toggleText('text1')">I страница</button>
       <div id="text1" class="text-container"></div>
