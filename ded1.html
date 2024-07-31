@@ -1,3 +1,4 @@
+Чикитос, [31.07.2024 16:48]
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,7 +38,7 @@
     }
     .container > div {
       position: absolute;
-      width: 300px;
+      width: 700px;
       height: auto;
       display: flex;
       justify-content: flex-end;
@@ -55,16 +56,16 @@
       flex-direction: column;
     }
     .knopka {
-      height: auto;
+      width: 700px;
       color: black;
       background-color: #ffc400;
-      width: 200px;
       margin: 6px;
       border-radius: 20px;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
+      padding: 10px;
     }
     button {
       text-decoration: none;
@@ -77,11 +78,14 @@
       cursor: pointer;
     }
     .text-container {
+      max-height: 200px;
+      overflow-y: auto;
       margin-top: 10px;
-      color: white;
+      color: yellow;
       font-size: 20px;
       font-family: 'Intro', sans-serif;
       text-align: center;
+      width: 100%;
     }
   </style>
 </head>
@@ -121,14 +125,15 @@
     </div>
   </div>
 
-  <script>
+Чикитос, [31.07.2024 16:48]
+<script>
     function showText(textId, element) {
       const texts = {
-        text1: 'Тысячи людей задают вопросы что будет с нашими потомками, что будет с нашим домом, то есть с нашей планетой, но вопросы остаются без ответа. В настоящее время на этот вопрос нет ответа. Никто не знает кто может первым нажать на кнопку ядерной ракеты и этого будет достаточно чтобы началась война, которая уничтожит всё на нашей планете, и это будет концом нашей цивилизации. Не так много прошло времени как закончилась вторая мировая война. Казалось что войны долго и долго больше не будет. Эта война принесла столько горя и бед человечеству',
-        text2: 'Text for II страница. The force is strong with this one.',
-        text3: 'Text for III страница. Join the resistance.',
+        text1: 'Text for I страница. Welcome to the world of Star Wars!',
+        text2: 'Text for II страница. The force is strong with this one. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vehicula, massa at bibendum aliquam, ligula quam tristique odio, in ullamcorper sapien eros sit amet leo. Nulla facilisi. Phasellus scelerisque accumsan nulla, id faucibus orci sodales ut. Proin tempor lectus nec felis sagittis, a volutpat lorem condimentum. Sed vel vestibulum erat, et volutpat felis. Quisque id risus non ligula scelerisque tincidunt.',
+        text3: 'Text for III страница. Join the resistance. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vehicula, massa at bibendum aliquam, ligula quam tristique odio, in ullamcorper sapien eros sit amet leo. Nulla facilisi. Phasellus scelerisque accumsan nulla, id faucibus orci sodales ut. Proin tempor lectus nec felis sagittis, a volutpat lorem condimentum. Sed vel vestibulum erat, et volutpat felis. Quisque id risus non ligula scelerisque tincidunt.',
         text4: 'Text for IV страница. May the force be with you.',
-        text5: 'Text for V страница. The galaxy awaits you.',
+        text5: 'Text for V страница. The galaxy awaits you. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vehicula, massa at bibendum aliquam, ligula quam tristique odio, in ullamcorper sapien eros sit amet leo. Nulla facilisi. Phasellus scelerisque accumsan nulla, id faucibus orci sodales ut. Proin tempor lectus nec felis sagittis, a volutpat lorem condimentum. Sed vel vestibulum erat, et volutpat felis. Quisque id risus non ligula scelerisque tincidunt.',
         text6: 'Text for VI страница. Embrace your destiny.',
         text7: 'Text for VII страница. The adventure continues.',
       };
