@@ -1,3 +1,4 @@
+Чикитос, [01.08.2024 10:31]
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,12 +23,12 @@
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      padding-top: 33px;
+      padding-top: 160px; /* Adjusted to make space for the fixed image */
     }
     .knopka {
       width: 700px;
       color: black;
-      background-color: #ffc400;
+      background-color: transparent; /* Background set to transparent */
       margin: 6px;
       border-radius: 20px;
       display: flex;
@@ -36,6 +37,7 @@
       flex-direction: column;
       padding: 10px;
       position: relative;
+      border: 2px solid #ffc400; /* Border color to distinguish buttons */
     }
     button {
       text-decoration: none;
@@ -51,12 +53,12 @@
       max-height: 0;
       overflow: hidden;
       margin-top: 10px;
-      color: white;
+      color: yellow; /* Text color set to yellow */
       font-size: 20px;
       font-family: 'Intro', sans-serif;
       text-align: center;
       width: 100%;
-      background: transparent;
+      background: transparent; /* Background set to transparent */
       transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
       opacity: 0;
     }
@@ -66,17 +68,20 @@
       transition: max-height 0.5s ease-in, opacity 0.5s ease-in;
     }
     .fixed-image {
+      position: fixed;
+      top: 20px; /* Adjust the top position as needed */
+      left: 50%;
+      transform: translateX(-50%);
       width: 140px;
       height: 140px;
-      margin-bottom: 20px;
     }
   </style>
 </head>
 <body>
+  <div class="fixed-image">
+    <img src="./pngshechka.png" alt="Logo" />
+  </div>
   <div class="container">
-    <div class="fixed-image">
-      <img src="./pngshechka.png" width="200" height="300" alt="Logo" />
-    </div>
     <div class="knopka">
       <button onclick="toggleText('text1')">I страница</button>
       <div id="text1" class="text-container"></div>
@@ -124,6 +129,7 @@
       }
     }
 
+Чикитос, [01.08.2024 10:31]
 function getTextContent(textId) {
       const texts = {
         text1: 'Text for I страница. Welcome to the world of Star Wars!',
